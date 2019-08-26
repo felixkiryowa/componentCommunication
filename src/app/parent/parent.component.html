@@ -1,0 +1,11 @@
+<div>
+    <app-child 
+    [greetMessage]="childmessage"
+    *ngFor="let n of childNameArray"
+    [name]="n"
+    (messageEvent)="receiveMessage($event)"
+    ></app-child>
+    <!-- <h4>{{ message }}</h4> -->
+    <!-- <p>Message from child using @viewChild {{ parentMessage }}</p> -->
+    <!-- <p>Message from child emmited by an event {{ setMessageFromChild }}</p> -->
+</div>
